@@ -1,9 +1,12 @@
+import css from "./TransactionHistory.module.css"
+
+
 const TransactionHistory = ({items}) => {
   console.log(items[0].type)
     return (
-        <table>
+        <table className={css.thead}>
   <thead>
-    <tr>
+    <tr className={css.row}>
       <th>Type</th>
       <th>Amount</th>
       <th>Currency</th>
