@@ -1,33 +1,34 @@
+import clsx from "clsx";
+import css from "./Profile.module.css";
+
+
+
+
 const Profile = props => {
 
     return (
-        <div>
+        <div className={css.profile}>
           <div>
 
             <img src={props.image} alt="avatar.user"/>
         
-            <p>{props.name}</p>
-            <p>{props.tag}</p>
-            <p>{props.location}</p>
-            <ul>
-              <li>
-              <span>Followers</span>
-              </li>
-            </ul>
+            <p className={css.name}>{props.name}</p>
+            <p className={css.tag}>{props.tag}</p>
+            <p className={css.tag}>{props.location}</p>
           </div>
 
-          <ul>
-            <li>
-              <span>Followers</span>
-              <span>{props.stats.followers}</span>
+          <ul className={css.stats}>
+            <li className={css.itemstats}>
+              <span className={css.span}>Followers</span>
+              <span className={css.qnt}>{props.stats.followers}</span>
             </li>
-            <li>
-              <span>Views</span>
-              <span>{props.stats.views}</span>
+            <li className={css.itemstats}>
+              <span className={css.span}>Views</span>
+              <span className={css.qnt}>{props.stats.views}</span>
             </li>
-            <li>
-              <span>Likes</span>
-              <span>{props.stats.likes}</span>
+            <li className={css.itemstats}>
+              <span className={css.span}>Likes</span>
+              <span className={css.qnt}>{props.stats.likes}</span>
             </li>
           </ul> 
 

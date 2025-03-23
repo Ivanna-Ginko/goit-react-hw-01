@@ -1,7 +1,9 @@
+import css from "./friendList.module.css";
+
 
 const FriendList = ({friends}) => {
     return (
-<ul>
+<ul  className={css.friendlist}>
     {friends.map((u)=>{
         return <li  key={u.id}><FriendListItem friend={u} /></li>
     })}
@@ -11,7 +13,7 @@ const FriendList = ({friends}) => {
 
 const FriendListItem = ({friend}) => {
         return (
-        <div key={friend.id}>
+        <div>
             <img src={friend.avatar} alt="Avatar" width="48" />
             <p>{friend.name}</p>
             <p>
