@@ -9,6 +9,10 @@
     text-align: center;
 }
 
+.img {
+    width: 480px;
+}
+
 .name {
     margin: 0;
     padding: 0;

@@ -10,10 +10,10 @@ const Profile = props => {
         <div className={css.profile}>
           <div>
 
-            <img src={props.image} alt="avatar.user"/>
+            <img  className={css.img} src={props.image} alt="avatar.user"/>
         
             <p className={css.name}>{props.name}</p>
-            <p className={css.tag}>{props.tag}</p>
+            <p className={css.tag}>@{props.tag}</p>
             <p className={css.tag}>{props.location}</p>
           </div>
 
