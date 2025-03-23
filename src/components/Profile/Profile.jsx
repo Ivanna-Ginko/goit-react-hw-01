@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import css from "./Profile.module.css";
+import css from "./profile.module.css";
 
 
 
