@@ -9,23 +9,27 @@ const Profile = props => {
             <p>{props.name}</p>
             <p>{props.tag}</p>
             <p>{props.location}</p>
-          
+            <ul>
+              <li>
+              <span>Followers</span>
+              </li>
+            </ul>
           </div>
 
-          {/* <ul>
+          <ul>
             <li>
               <span>Followers</span>
-              <span>{followers}</span>
+              <span>{props.stats.followers}</span>
             </li>
             <li>
               <span>Views</span>
-              <span>{views}</span>
+              <span>{props.stats.views}</span>
             </li>
             <li>
               <span>Likes</span>
-              <span>{likes}</span>
+              <span>{props.stats.likes}</span>
             </li>
-          </ul> */}
+          </ul> 
 
         </div>
           
