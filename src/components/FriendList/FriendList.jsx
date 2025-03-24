@@ -1,4 +1,5 @@
 import css from "./friendList.module.css";
+import FriendListItem from "../FriendListItem/FriendListItem";
 
 
 const FriendList = ({friends}) => {
@@ -11,17 +12,6 @@ const FriendList = ({friends}) => {
     )
 }
 
-const FriendListItem = ({friend}) => {
-        return (
-        <div>
-            <img  className={css.img} src={friend.avatar} alt="Avatar"  />
-            <p className={css.name}>{friend.name}</p>
-            <p>
-                {friend.isOnline ? <p className={`${css.status} ${css.green}`}> Online </p> : <p className={`${css.status} ${css.red}`}> Offline </p>}
-            </p>
-        </div>
-);    
 
-}
 
 export default FriendList;
